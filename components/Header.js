@@ -35,7 +35,6 @@ const search =(e)=>{
         </form>
         <Avatar className="ml-auto" url={"https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg"}/>
         </div>
-        {/*Header Options*/}
         <HeaderOptions />
     </header>
   )
