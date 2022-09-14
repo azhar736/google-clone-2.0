@@ -1,0 +1,27 @@
+import Link from "next/link"
+import PaginationButton from "./PaginationButton"
+
+function SearchResults({results}) {
+  return (
+    <div className="max-auto w-full px-3 sm:pl-[7%] md:pl-[14%] lg:pl-52">
+    <p className="text-gray-600 text-md mb-5 mt-3">
+    About {results.searchInformation?.formattedTotalResults}
+    results({results.searchInformation?.formattedSearchTime}seconds)
+    </p>
+    {results.items?.map((result)=>(
+     <div key={result.link} className="max-w-xl mb-8"> 
+     <div className="group">
+        <a className="text-sml" href={result.link}>{result.formattedUrl}</a>
+        <a href={result.link}>
+            <h2 className="truncate text-xl text-blue-800 font-medium group-hover:underline">{result.title}</h2>
+        </a>
+     </div>
+     <p className="line-clamp-2">{result.snippet}</p>
+     </div>
+    ))}
+    <PaginationButton />
+    </div>
+  )
+}
+
+export default SearchResults
