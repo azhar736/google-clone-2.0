@@ -34,7 +34,7 @@ const search =(e)=>{
          <MagnifyingGlassIcon onClick={search} className="h-6 text-blue-500 hidden sm:inline-flex cursor-pointer" />
         <button type="submit" hidden onClick={search}>Search</button>
         </form>
-        <Avatar className="ml-auto" url={"https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg"}/>
+        <Avatar className="ml-auto" url="https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg"/>
         </div>
         <HeaderOptions />
     </header>
