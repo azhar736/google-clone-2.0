@@ -20,6 +20,7 @@ const search =(e)=>{
          <Image src="https://www.google.com.pk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         width="120"
         height="40"
+        alt="Google"
         className="cursor-pointer"
         onClick={()=>router.push('/')}
         />

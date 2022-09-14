@@ -37,6 +37,7 @@ export default function Home() {
         <Image src="https://www.google.com.pk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         width="300"
         height="100"
+        alt="Google"
         />
         <div className="flex w-full hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border-2 border-gray-200 items-center px-5 py-3 sm:max-w-xl lg:max-w-2xl mt-3">
        <MagnifyingGlassIcon onClick={Search}  className="h-5 mr-3 text-gray-500 cursor-pointer"/>
@@ -45,7 +46,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col w-1/2 space-y-2 mt-8 justify-center sm:space-y-0 sm:flex-row sm:space-x-4">
           <button onClick={Search} className="btn">Google Search</button>
-          <button onClick={Search} className="btn">I'am Feeling Lucky</button>
+          <button onClick={Search} className="btn">I am Feeling Lucky</button>
         </div>
        </form>
       <div className="absolute bottom-0 left-0 w-full">
